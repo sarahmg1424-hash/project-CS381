@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="headerhome">Student Feedback System</h1>
+</header>
+
+<main>
+    <section class="container1">
+        <h2>Manage Feedback</h2>
+
+        <table>
+            <tr>
+                <th>Student</th>
+                <th>Subject</th>
+                <th>Message</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>sarah@yic.com</td>
+                <td>Lab Issue</td>
+                <td>Computer not working</td>
+                <td id="status1">New</td>
+                <td>2026-04-14</td>
+                <td>
+      <button id="reviewed1" class="link-btn">Reviewed |</button>
+     <button id="resolved1" class="link-btn">Resolved</button>       
+         </td>
+            </tr>
+
+            <tr>
+                <td>amjad@yic.com</td>
+                <td>Classroom</td>
+                <td>Too cold</td>
+                <td id="status2">New</td>
+                <td>2026-04-13</td>
+                <td>
+           <button id="reviewed1" class="link-btn">Reviewed |</button>
+          <button id="resolved1" class="link-btn">Resolved</button>         
+       </td>
+            </tr>
+        </table>
+
+        <p><a href="home.html">Back to Home</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>Student Feedback System @2026</p>
+</footer>
+
+<script>
+let rev1 = document.getElementById("reviewed1");
+let res1 = document.getElementById("resolved1");
+let status1 = document.getElementById("status1");
+
+let rev2 = document.getElementById("reviewed2");
+let res2 = document.getElementById("resolved2");
+let status2 = document.getElementById("status2");
+
+rev1.addEventListener("click", function(e) {
+    e.preventDefault();
+    status1.textContent = "Reviewed";
+});
+
+res1.addEventListener("click", function(e) {
+    e.preventDefault();
+    status1.textContent = "Resolved";
+});
+
+rev2.addEventListener("click", function(e) {
+    e.preventDefault();
+    status2.textContent = "Reviewed";
+});
+
+res2.addEventListener("click", function(e) {
+    e.preventDefault();
+    status2.textContent = "Resolved";
+});
+</script>
+
+</body>
+</html>

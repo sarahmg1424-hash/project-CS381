@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="add-page">
+
+<header>
+    <h1 class="headerhome">Student Feedback System</h1>
+</header>
+
+<main>
+    <section class="container">
+        <h2>Add Feedback</h2>
+
+        <form id="feedbackForm">
+            <input type="text" id="subject" placeholder="Subject" required minlength="3" maxlength="10">
+            <textarea id="message" placeholder="Write your feedback" required minlength="5" maxlength="20"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p class="success" id="successMsg"></p>
+        <p><a href="home.html">Back to Home</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>Student Feedback System @2026</p>
+</footer>
+
+<script>
+let form = document.getElementById("feedbackForm");
+
+form.addEventListener("submit", function (e) {
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
+    let success = document.getElementById("successMsg");
+
+    if (subject === "" || message === "") {
+        e.preventDefault();
+        alert("Please fill all fields.");
+    } else {
+        e.preventDefault();
+        success.textContent = "Feedback submitted successfully!";
+    }
+});
+</script>
+
+</body>
+</html>
