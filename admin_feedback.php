@@ -64,7 +64,7 @@ $rows = $stmt->fetchAll();
     <section class="container">
         <h2>Manage Feedback</h2>
 
-        <div class="table-wrapper">
+        <div class="ta">
             <table>
                 <tr>
                     <th>Student</th>
