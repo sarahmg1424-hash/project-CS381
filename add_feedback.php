@@ -12,8 +12,20 @@ if ($_SESSION["user_role"] != "student") {
 }
 
 $message = "";
+if (!isset($_SESSION["token"])) {
+
+    $_SESSION["token"] =
+        bin2hex(random_bytes(32));
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (
+    !isset($_POST["token"]) ||
+    $_POST["token"] !== $_SESSION["token"]
+) {
+
+    die("Invalid CSRF Token");
+}
     $subject = trim($_POST["subject"]);
     $feedback_message = trim($_POST["message"]);
     $user_id = $_SESSION["user_id"];
@@ -55,6 +67,7 @@ $stmt->execute([
         <h2>Add Feedback</h2>
 
         <form method="POST">
+            <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>">
             <input type="text" name="subject" placeholder="Subject" required minlength="3" maxlength="10">
             <textarea name="message" placeholder="Write your feedback" required minlength="5" maxlength="20"></textarea>
             <button type="submit">Submit</button>
