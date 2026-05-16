@@ -13,19 +13,12 @@ header {
     text-align: center;
     padding: 20px 10px 10px;
 }
-.login-page main{
-  min-height: 60vh;
+
+.login-page main {
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
- .login-page footer {
-    text-align: center;
-    padding: 20px 10px;
-    margin-bottom: 0px;
-        margin-top: 50px;
-
 }
 
 .home-page main {
@@ -35,10 +28,6 @@ header {
     align-items: center;
 }
 
-.home-page .container {
-    max-width: 600px;
-    padding: 30px;
-}
 .menu {
     display: flex;
     flex-direction: column;
@@ -54,27 +43,22 @@ header {
     text-align: center;
 }
 
-.add-page{
-   display: flex;
+.add-page {
+    display: flex;
     flex-direction: column;
-    min-height: 90vh;  
+    min-height: 90vh;
 }
- .add-page footer {
-    text-align: center;
-    margin-top: 148px;
 
-}
-h1, h2 {
+h1,
+h2 {
     margin: 0 0 15px;
     text-align: center;
     color: #0f172a;
-    
 }
-h1 {
 
+h1 {
     font-size: 1.5rem;
     padding-top: 19px;
-
 }
 
 p {
@@ -147,13 +131,6 @@ a:hover {
     font-weight: bold;
 }
 
-.add-page main {
-    width: 100%;
-}
-
-.add-page .container {
-    width: 300px;
-}
 .myfeedback-page .ta {
     width: 100%;
     overflow-x: auto;
@@ -163,28 +140,23 @@ a:hover {
     background-color: #2563eb;
     color: white;
 }
-.myfeedback-page .container {
-    margin-top: 70px;
-}
 
 .myfeedback-page table {
-    min-width: 100%;
-    max-width: 500px;
+       width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     background-color: white;
-
 }
+
 .myfeedback-page table,
 .myfeedback-page th,
 .myfeedback-page td {
     border: 1px solid #dbeafe;
 }
 
- .myfeedback-page footer {
+footer {
     text-align: center;
-    margin-top: 200px;
-
+    margin-top: 40px;
 }
 
 .myfeedback-page th,
@@ -197,6 +169,7 @@ a:hover {
 .myfeedback-page tr:nth-child(even) {
     background-color: #f8fbff;
 }
+
 .admin-page main {
     min-height: 70vh;
     display: flex;
@@ -207,11 +180,6 @@ a:hover {
 .admin-page .container {
     max-width: 1000px;
     padding: 30px;
-}
-
-.admin-page .table-wrapper {
-    width: 100%;
-    overflow-x: auto;
 }
 
 .admin-page table {
@@ -259,58 +227,21 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-    /*.add-page main {
-        height: 70vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    .login-page footer {
+        margin-top: 25px;
     }
 
-    .add-page .container {
-        width: 550px;
-        padding: 30px;
-    }*/
-  
-
-    .login-page main {
-        min-height: 70vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .home-page footer {
+        margin-top: 25px;
     }
 
-    .login-page .container {
-        width: 60%;       
-        max-width: 800px;  
-        min-width: 500px;  
-        padding: 35px;
-        margin: 0 auto;
-    }
-       .login-page footer {
-    margin-top: 25px;
-}
-   .home-page main {
-        min-height: 70vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .home-page .container {
-        width: 65%;       
-        max-width: 800px;  
-        min-width: 600px;  
-        padding: 35px;
-        margin: 0 auto;
-    }
-   .home-page footer {
-    margin-top: 25px;
-}
- h1 {
+    h1 {
         font-size: 2.3rem;
-         padding-top: 19px;
+        padding-top: 19px;
     }
-      .menu {
+
+    .menu {
         flex-direction: row;
         justify-content: center;
         gap: 20px;
@@ -319,19 +250,17 @@ a:hover {
     .menu a {
         min-width: 180px;
     }
-        .myfeedback-page .container {
-        max-width: 900px;
-        padding: 30px;
-    }
 
     .myfeedback-page th,
     .myfeedback-page td {
         padding: 14px;
     }
-      .add-page footer {
-    margin-top: 25px;
-}
-  .myfeedback-page footer {
-    margin-top: 205px;
-}
+
+    .add-page footer {
+        margin-top: 25px;
+    }
+
+    .myfeedback-page footer {
+        margin-top: 205px;
+    }
 }
