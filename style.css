@@ -259,7 +259,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-    .add-page main {
+    /*.add-page main {
         height: 70vh;
         display: flex;
         justify-content: center;
@@ -269,7 +269,7 @@ a:hover {
     .add-page .container {
         width: 550px;
         padding: 30px;
-    }
+    }*/
   
 
     .login-page main {
