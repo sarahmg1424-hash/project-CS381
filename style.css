@@ -181,7 +181,10 @@ footer {
     max-width: 1000px;
     padding: 30px;
 }
-
+.admin-page .ta {
+    width: 100%;
+    overflow-x: auto;
+}
 .admin-page table {
     width: 100%;
     min-width: 800px;
