@@ -142,7 +142,7 @@ a:hover {
 }
 
 .myfeedback-page table {
-       width: 100%;
+    width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     background-color: white;
@@ -156,7 +156,7 @@ a:hover {
 
 footer {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .myfeedback-page th,
@@ -169,7 +169,6 @@ footer {
 .myfeedback-page tr:nth-child(even) {
     background-color: #f8fbff;
 }
-
 .admin-page main {
     min-height: 70vh;
     display: flex;
@@ -181,10 +180,12 @@ footer {
     max-width: 1000px;
     padding: 30px;
 }
-.admin-page .ta {
+
+.admin-page .table-wrapper {
     width: 100%;
     overflow-x: auto;
 }
+
 .admin-page table {
     width: 100%;
     min-width: 800px;
@@ -228,7 +229,6 @@ footer {
 .admin-page .link-btn:hover {
     text-decoration: underline;
 }
-
 @media (min-width: 768px) {
 
     .login-page footer {
