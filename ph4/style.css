@@ -230,6 +230,9 @@ footer {
     text-decoration: underline;
 }
 @media (min-width: 768px) {
+  .container {
+        max-width: 700px;
+    }
 
     .login-page footer {
         margin-top: 25px;
