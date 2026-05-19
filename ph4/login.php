@@ -52,7 +52,8 @@ $stmt->execute([
             <button type="submit">Login</button>
         </form>
 
-        <p class="error" id="errorMsg"><?php echo htmlspecialchars($message); ?></p>
+        <p class="error" id="errorMsg"><?php echo htmlspecialchars($message); ?></p> 
+         <p>Don't have an account? <a href="register.php">Sign Up</a></p>
     </section>
 </main>
 
