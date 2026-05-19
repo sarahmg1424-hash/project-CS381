@@ -72,7 +72,7 @@ $stmt->execute([
         </form>
 
         <p class="error"><?php echo htmlspecialchars($message); ?></p>
-        <p><a href="login.php">Already have an account? Login</a></p>
+        <p>Already have an account? <a href="login.php">Login</a></p>
     </section>
 </main>
 
