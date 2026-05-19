@@ -69,7 +69,7 @@ $stmt->execute([
         <form method="POST">
             <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>">
             <input type="text" name="subject" placeholder="Subject" required minlength="3" maxlength="10">
-            <textarea name="message" placeholder="Write your feedback" required minlength="5" maxlength="20"></textarea>
+            <textarea name="message" placeholder="Write your feedback" required minlength="5" maxlength="200"></textarea>
             <button type="submit">Submit</button>
         </form>
 
